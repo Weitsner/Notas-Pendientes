@@ -1,0 +1,173 @@
+/*EXPERIENCIAS DE USUARIOS*/
+body {
+
+  background-image: linear-gradient(#ffffff81, #ffffff81), url(https://png.pngtree.com/background/20230401/original/pngtree-summer-cartoon-beautiful-beach-background-picture-image_2247981.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.contenedor-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.miformulario {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: transparent;
+  border-radius: 16px;
+  backdrop-filter: blur(5.8px);
+  -webkit-backdrop-filter: blur(5.8px);
+  border: 1px solid rgba(247, 255, 0, 0.16);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.titulo {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  font-weight: 800;
+  text-shadow: 5px 5px 2px #FFD000;
+
+}
+
+.text-formulario {
+  color: rgb(0, 0, 0);
+  text-shadow: 5px 5px 2px #FFD000;
+  font-size: 30px;
+  padding: 15px 0px 0px 10px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 800;
+}
+
+.text-usuario {
+  background: rgba(75, 230, 255, 0.12);
+  border-radius: 16px; 
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(75, 230, 255, 0.17);
+  padding: 20px 0px 9px 10px;
+  border: none;
+  align-items: center;
+  font-size: 18px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.enviaryactualizar {
+  color: #ffd000;
+  border-color: #000000;
+  background-color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 40px 70px 40px 70px;
+  padding: 9px 0px 9px 10px;
+  border-radius: 30px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+/*Estilos contenedor que se crea*/
+.cont-expe {
+  margin-top: 30px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
+  border: 1px solid rgba(255, 200, 47, 0.692);
+  text-align: center;
+}
+
+.nombre {
+  color: #000000;
+  text-shadow: 5px 2px 2px #ffd000;
+}
+
+.boton-editar {
+  border-radius: 10px;
+  background-color: transparent;
+  color: #000000;
+  margin: 9px 20px 9px 10px;
+}
+
+.boton-eliminar {
+  border-radius: 10px;
+  background-color: transparent;
+  color: #ff4800;
+  margin: 9px 9px 20px 10px;
+}
+
+/*BOTON CHECKBOX*/
+
+/* Hide the default checkbox */
+.container input {
+  
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+ }
+ 
+ .container {
+  width: 20%;
+  margin: 20px 20px ;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 25px;
+  user-select: none;
+ }
+ 
+ /* Create a custom checkbox */
+ .checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 1.3em;
+  background: black;
+  border-radius: 50px;
+  transition: all 0.7s;
+  --spread: 20px;
+ }
+ 
+ /* When the checkbox is checked, add a blue background */
+ .container input:checked ~ .checkmark {
+  background: black;
+  box-shadow: -10px -10px var(--spread) 0px #5B51D8, 0 -10px var(--spread) 0px #833AB4, 10px -10px var(--spread) 0px #E1306C, 10px 0 var(--spread) 0px #FD1D1D, 10px 10px var(--spread) 0px #F77737, 0 10px var(--spread) 0px #FCAF45, -10px 10px var(--spread) 0px #FFDC80;
+ }
+ 
+ /* Create the checkmark/indicator (hidden when not checked) */
+ .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+ }
+ 
+ /* Show the checkmark when checked */
+ .container input:checked ~ .checkmark:after {
+  display: block;
+ }
+ 
+ /* Style the checkmark/indicator */
+ .container .checkmark:after {
+  left: 0.45em;
+  top: 0.25em;
+  width: 0.25em;
+  height: 0.5em;
+  border: solid #f0f0f0;
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotate(45deg);
+ }
+ 
